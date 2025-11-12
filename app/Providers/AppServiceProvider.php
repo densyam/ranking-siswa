@@ -19,15 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Tambahan khusus untuk environment production (misal di Vercel)
-        if (app()->environment('production')) {
-            $source = database_path('ranking.sqlite');
-            $destination = '/tmp/ranking.sqlite';
-
-            // Cek kalau file belum ada di /tmp, baru disalin
-            if (file_exists($source) && !file_exists($destination)) {
-                copy($source, $destination);
-            }
-        }
+        //
     }
 }
