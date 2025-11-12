@@ -4,10 +4,7 @@
     { "src": "public/index.php", "use": "@vercel/php" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "public/index.php"
-    }
+    { "src": "/(.*)", "dest": "public/index.php" }
   ],
   "buildCommand": "cp database/ranking.sqlite /tmp/ranking.sqlite || true"
 }
