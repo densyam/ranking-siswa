@@ -1,0 +1,124 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background dan font dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4e1711, #962a2a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Judul halaman */
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+/* Form login */
+form {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+}
+
+/* Label dan input */
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #444;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #4e1711;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #962a2a;
+}
+
+/* Tombol login */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #962a2a;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #7a1f1f;
+}
+
+/* Error message */
+p[style*="color:red"] {
+    color: #000000 !important;
+    background-color: #e3dbda;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Link kembali */
+p a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

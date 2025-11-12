@@ -1,0 +1,170 @@
+/* css/siswa.css */
+
+/* General Reset & Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #4e1711;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4e1711;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: #4e1711;
+    padding: 20px 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.navbar-nav a:hover {
+    background-color: #7a2a23;
+}
+
+/* Heading */
+.navbar-nav h1 {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 2.2rem;
+    color: #4e1711;
+}
+
+a[href$="create"] {
+    display: inline-block;
+    margin: 0 0px 20px 320px;
+    padding: 10px 20px;
+    background-color: #4e1711;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[href$="create"]:hover {
+    background-color: #7a2a23;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(78, 23, 17, 0.15);
+}
+
+table thead, table tr:first-child {
+    background-color: #4e1711;
+    color: #fff;
+}
+
+table th,
+table td {
+    border: 1px solid #4e1711;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+table tbody tr:hover {
+    background-color: #ac736d;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* Action Buttons */
+table td a,
+table td button {
+    background-color: #4e1711;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+table td a:hover,
+table td button:hover {
+    background-color: #7a2a23;
+}
+
+form {
+    display: inline;
+}
+
+/* Responsive Table (Optional) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav h1 {
+        position: static;
+        margin-top: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #4e1711;
+    }
+}
+
