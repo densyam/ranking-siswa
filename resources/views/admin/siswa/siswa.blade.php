@@ -14,7 +14,6 @@
             <a href="{{ route('nilai.index') }}">Nilai Siswa</a>
             <a href="{{ route('hasil-spk.index') }}">Hitung Ranking Siswa</a>
             <a href="{{ route('logout') }}" onclick="return confirm('Apakah anda ingin logout?')">Logout</a>
-            <h1>Data Siswa</h1>
         </div>
     </div>
     <h1>Data Siswa</h1>
